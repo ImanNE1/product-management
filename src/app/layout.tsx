@@ -1,8 +1,8 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { ThemeProvider } from "./components/theme-provider";
+import { ThemeProvider } from "./components/theme/theme-provider";
 import { Providers } from "./providers";
-import { Footer } from "./components/footer";
+import { Footer } from "./components/layout/footer";
 
 export const metadata: Metadata = {
   title: "ProductHub",

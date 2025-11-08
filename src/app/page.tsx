@@ -3,7 +3,7 @@
 
 import React, { useEffect, useMemo, useState } from "react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { Navbar } from "./components/navbar";
+import { Navbar } from "./components/layout/navbar";
 import { ProductsAPI } from "@/lib/api";
 import { Product, SortDirection, SortField, StockFilter } from "@/lib/types";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -15,7 +15,7 @@ import { ProductCard } from "./components/products/product-card";
 import { ProductFormModal } from "./components/products/product-form-modal";
 import { DeleteConfirmDialog } from "./components/products/delete-confirm-dialog";
 import { FilterPanel } from "./components/products/filter-panel";
-import { PaginationBar } from "./components/pagination-bar";
+import { PaginationBar } from "./components/layout/pagination-bar";
 
 export default function Page() {
   // Filters & sorting

@@ -3,7 +3,7 @@
 import React from "react";
 import { Button } from "@/components/ui/button";
 import { Package, Plus } from "lucide-react";
-import { ThemeToggle } from "./theme-toggle";
+import { ThemeToggle } from "../theme/theme-toggle";
 
 type NavbarProps = {
   onAdd: () => void;
