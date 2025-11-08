@@ -92,7 +92,6 @@ export function ProductTable({
   sortDirection,
   onSort,
 }: Props) {
-  // Loading state: skeleton
   if (isLoading) {
     return (
       <div className="w-full">
