@@ -1,8 +1,9 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
-import { Package, Plus } from "lucide-react";
+import { Plus } from "lucide-react";
 import { ThemeToggle } from "../theme/theme-toggle";
 
 type NavbarProps = {
@@ -16,12 +17,17 @@ export function Navbar({ onAdd }: NavbarProps) {
         <div className="flex h-16 items-center justify-between">
           {/* Brand */}
           <div className="flex items-center gap-3">
-            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
-              <Package className="h-6 w-6 text-primary-foreground" aria-hidden="true" />
+            <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-muted">
+              <Image
+                src="/asset/img/logo2.png"
+                alt="Product Management logo"
+                width={35}
+                height={35}
+                className="object-contain"
+              />
             </div>
             <div className="leading-tight">
               <h1 className="text-lg font-bold text-foreground">Product Management</h1>
-              {/* <p className="text-xs text-muted-foreground">Manage your product catalog with ease</p> */}
             </div>
           </div>
 
