@@ -5,8 +5,8 @@ import { Providers } from "./providers";
 import { Footer } from "./components/layout/footer";
 
 export const metadata: Metadata = {
-  title: "ProductHub",
-  description: "Inventory Management",
+  title: "Product Management",
+  description: "Product Management",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
